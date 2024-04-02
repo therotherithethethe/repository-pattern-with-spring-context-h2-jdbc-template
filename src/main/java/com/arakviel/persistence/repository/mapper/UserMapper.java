@@ -1,6 +1,6 @@
-package com.arakviel.persistance.repository.mapper;
+package com.arakviel.persistence.repository.mapper;
 
-import com.arakviel.persistance.entity.User;
+import com.arakviel.persistence.entity.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.arakviel.persistance.entity;
+package com.arakviel.persistence.entity;
 
 import java.util.UUID;
 import lombok.Builder;

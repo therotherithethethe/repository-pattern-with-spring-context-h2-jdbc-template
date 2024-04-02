@@ -1,12 +1,10 @@
-package com.arakviel.persistance.repository.impl;
+package com.arakviel.persistence.repository.impl;
 
-import com.arakviel.persistance.config.ConnectionManager;
-import com.arakviel.persistance.entity.User;
-import com.arakviel.persistance.repository.GenericRepository;
-import com.arakviel.persistance.repository.contracts.UserRepository;
-import com.arakviel.persistance.repository.mapper.UserMapper;
-import java.io.Serializable;
-import java.util.ArrayList;
+import com.arakviel.persistence.config.ConnectionManager;
+import com.arakviel.persistence.entity.User;
+import com.arakviel.persistence.repository.GenericRepository;
+import com.arakviel.persistence.repository.contracts.UserRepository;
+import com.arakviel.persistence.repository.mapper.UserMapper;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;

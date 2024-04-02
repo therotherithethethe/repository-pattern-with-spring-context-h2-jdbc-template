@@ -100,9 +100,9 @@ UPDATE users
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:970)
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1014)
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1024)
-	at com.arakviel.persistance.repository.GenericRepository.update(GenericRepository.java:69)
-	at com.arakviel.persistance.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:37)
-	at com.arakviel.persistance.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:18)
+	at com.arakviel.persistence.repository.GenericRepository.update(GenericRepository.java:69)
+	at com.arakviel.persistence.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:37)
+	at com.arakviel.persistence.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:18)
 	at com.arakviel.Main.main(Main.java:39)
 2024-04-02 18:49:18.634335+03:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "gludzik" [22018-224]

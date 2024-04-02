@@ -1,4 +1,4 @@
-package com.arakviel.persistance.repository;
+package com.arakviel.persistence.repository;
 
 import java.util.List;
 import java.util.Optional;

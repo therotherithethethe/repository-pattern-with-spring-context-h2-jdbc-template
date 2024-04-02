@@ -1,8 +1,8 @@
-package com.arakviel.persistance.repository;
+package com.arakviel.persistence.repository;
 
 import static java.lang.StringTemplate.STR;
 
-import com.arakviel.persistance.config.ConnectionManager;
+import com.arakviel.persistence.config.ConnectionManager;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;

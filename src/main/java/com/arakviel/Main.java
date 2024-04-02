@@ -1,9 +1,9 @@
 package com.arakviel;
 
 import com.arakviel.config.ApplicationConfig;
-import com.arakviel.persistance.entity.Parrot;
-import com.arakviel.persistance.entity.User;
-import com.arakviel.persistance.repository.contracts.UserRepository;
+import com.arakviel.persistence.entity.Parrot;
+import com.arakviel.persistence.entity.User;
+import com.arakviel.persistence.repository.contracts.UserRepository;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

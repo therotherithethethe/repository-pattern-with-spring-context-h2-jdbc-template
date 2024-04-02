@@ -1,4 +1,4 @@
-package com.arakviel.persistance.config;
+package com.arakviel.persistence.config;
 
 import java.util.UUID;
 import org.springframework.jdbc.core.JdbcTemplate;
