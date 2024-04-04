@@ -3,7 +3,13 @@ package com.arakviel.persistence.repository;
 import static java.lang.StringTemplate.STR;
 
 import com.arakviel.persistence.config.ConnectionManager;
+import com.arakviel.persistence.entity.GenericEntity;
+import com.arakviel.persistence.entity.User;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -12,26 +18,33 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-public abstract class GenericRepository<T> implements Repository<T> {
+public abstract class GenericRepository<T extends GenericEntity> implements Repository<T> {
 
     private final String tableName;
+    private final RowMapper<T> rowMapper;
     private final JdbcTemplate jdbcTemplate;
 
-    public GenericRepository(ConnectionManager connectionManager, String tableName) {
+    public GenericRepository(ConnectionManager connectionManager, String tableName, RowMapper<T> rowMapper) {
         this.jdbcTemplate = connectionManager.jdbcTemplate;
         this.tableName = tableName;
+        this.rowMapper = rowMapper;
     }
 
     // Переписати на аспекти spring Context
     @Override
     public Optional<T> findById(UUID id) {
+        return findBy("id", id);
+    }
+
+    @Override
+    public Optional<T> findBy(String column, Object value) {
         final String sql = STR."""
             SELECT *
               FROM \{tableName}
-             WHERE id = ?
+             WHERE \{column} = ?
         """;
         try {
-            return Optional.ofNullable(jdbcTemplate.queryForObject(sql, rowMapper(), id));
+            return Optional.ofNullable(jdbcTemplate.queryForObject(sql, rowMapper, value));
         } catch(EmptyResultDataAccessException e) {
             return Optional.empty();
         }
@@ -43,27 +56,52 @@ public abstract class GenericRepository<T> implements Repository<T> {
             SELECT *
               FROM \{tableName}
         """;
-        return jdbcTemplate.query(sql, rowMapper());
+        return jdbcTemplate.query(sql, rowMapper);
     }
 
     @Override
-    public abstract T save(T entity);
+    public T save(final T entity) {
+        List<Object> values = tableValues(entity);
 
-    protected void insert(Object... values) {
-        String attributesString = "id, " + String.join(", ", tableAttributes());
+        T newEntity;
+        if(Objects.isNull(entity.getId())) {
+            UUID newId = UUID.randomUUID();
+            values.addFirst(newId);
+            newEntity = insert(values);
+        } else {
+            values.addLast(entity.getId());
+
+            newEntity = update(values);
+        }
+
+        return newEntity;
+    }
+
+    protected T insert(List<Object> values) {
+        List<String> attributes = tableAttributes();
+        String attributesString = "id, " + String.join(", ", attributes);
         String placeholders = Stream.generate(() -> "?")
-            .limit(tableAttributes().size() + 1)
+            .limit(attributes.size() + 1)
             .collect(Collectors.joining(", "));
         String sql = STR."""
                 INSERT INTO \{tableName} (\{attributesString})
                 VALUES (\{placeholders})
         """;
 
-        jdbcTemplate.update(sql, values);
+        if(attributes.stream().anyMatch(a -> a.equals("created_at"))) {
+            values.add(LocalDateTime.now()); // created_at
+            values.add(LocalDateTime.now()); // updated_at
+        }
+
+        jdbcTemplate.update(sql, values.toArray());
+        // TODO: write custom exception
+        return findById((UUID) values.getFirst()).orElseThrow();
     }
 
-    protected int update(Object... values) {
-        String attributesString = tableAttributes().stream()
+    protected T update(List<Object> values) {
+        List<String> attributes = tableAttributes();
+        String attributesString = attributes.stream()
+            .filter(a -> !a.contains("created_at"))
             .map(a -> STR."\{a} = ?")
             .collect(Collectors.joining(", "));
         String sql = STR."""
@@ -72,7 +110,13 @@ public abstract class GenericRepository<T> implements Repository<T> {
                WHERE id = ?
         """;
 
-        return jdbcTemplate.update(sql, values);
+        if(attributes.stream().anyMatch(a -> a.equals("updated_at"))) {
+            values.add(LocalDateTime.now()); // updated_at
+        }
+
+        jdbcTemplate.update(sql, values.toArray());
+        // TODO: write custom exception
+        return findById((UUID) values.getFirst()).orElseThrow();
     }
 
     @Override
@@ -84,7 +128,6 @@ public abstract class GenericRepository<T> implements Repository<T> {
         return jdbcTemplate.update(sql, id);
     }
 
-    protected abstract RowMapper<T> rowMapper();
-
     protected abstract List<String> tableAttributes();
+    protected abstract List<Object> tableValues(T entity);
 }

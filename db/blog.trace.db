@@ -1,112 +1,50 @@
-2024-04-02 18:27:54.074712+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "gludzik" [22018-224]
-2024-04-02 18:29:17.965575+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "gludzik" [22018-224]
-2024-04-02 18:32:18.324941+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "gludzik" [22018-224]
-2024-04-02 15:40:51 jdbc[3]: exception
-java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
-	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
-	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-04-02 15:40:54 jdbc[3]: exception
-java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
-	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
-	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-04-02 15:41:00 jdbc[3]: exception
-java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
-	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
-	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
-	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
-	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
-	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-04-02 18:43:44.952976+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "      UPDATE users\000a         SET login = ?, password = ?, age = ?\000a       WHERE id = 87e8427[*]a-8791-412c-98ac-d729075ffbe2\000a"; SQL statement:
-      UPDATE users
-         SET login = ?, password = ?, age = ?
-       WHERE id = 87e8427a-8791-412c-98ac-d729075ffbe2
- [42000-224]
-2024-04-02 18:45:53.619758+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "76aa473f-a996-4bd5-b522-883d1f8a2958" not found; SQL statement:
-UPDATE users
-         SET login = ?, password = ?, age = ?
-       WHERE id = "76aa473f-a996-4bd5-b522-883d1f8a2958" [42122-224]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+2024-04-04 15:46:29.510814+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#2" is not set; SQL statement:
+        INSERT INTO users (id, login, password, age)
+        VALUES (?,  [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	at org.h2.message.DbException.get(DbException.java:223)
 	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
-	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
-	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
-	at org.h2.expression.condition.Comparison.optimize(Comparison.java:148)
-	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
-	at org.h2.command.dml.Update.doPrepare(Update.java:127)
-	at org.h2.command.dml.DataChangeStatement.prepare(DataChangeStatement.java:37)
-	at org.h2.command.Parser.prepareCommand(Parser.java:489)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
-	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1711)
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:656)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:975)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:970)
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1014)
 	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1024)
-	at com.arakviel.persistence.repository.GenericRepository.update(GenericRepository.java:69)
-	at com.arakviel.persistence.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:37)
-	at com.arakviel.persistence.repository.impl.UserRepositoryImpl.save(UserRepositoryImpl.java:18)
-	at com.arakviel.Main.main(Main.java:39)
-2024-04-02 18:49:18.634335+03:00 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "gludzik" [22018-224]
-2024-04-02 15:50:54 jdbc[3]: exception
+	at com.arakviel.persistence.repository.GenericRepository.insert(GenericRepository.java:85)
+	at com.arakviel.persistence.repository.GenericRepository.save(GenericRepository.java:65)
+	at com.arakviel.Main.pseudoTests(Main.java:34)
+	at com.arakviel.Main.main(Main.java:18)
+2024-04-04 15:47:49.890209+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#2" is not set; SQL statement:
+        INSERT INTO users (id, login, password, age)
+        VALUES (?,  [90012-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:658)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:207)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:159)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$2(JdbcTemplate.java:975)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:970)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1014)
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1024)
+	at com.arakviel.persistence.repository.GenericRepository.insert(GenericRepository.java:85)
+	at com.arakviel.persistence.repository.GenericRepository.save(GenericRepository.java:65)
+	at com.arakviel.Main.pseudoTests(Main.java:34)
+	at com.arakviel.Main.main(Main.java:18)
+2024-04-04 12:48:47 jdbc[3]: exception
 java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
 	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
 	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
@@ -127,7 +65,18 @@ java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supporte
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-2024-04-02 15:51:30 jdbc[3]: exception
+2024-04-04 16:21:26.238866+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS posts(\000a    id              UUID PRIMARY KEY,\000a    title           VARCHAR(128) NOT NULL,\000a    body            TEXT NOT NULL,\000a    published_at    TIMESTAMP NULL,\000a    created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Use CURRENT_TIMESTAMP for automatic date/time\000a    updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  -- Use ON UPDATE CURRENT_TIMESTAMP\000a[*])\000a"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS posts(
+    id              UUID PRIMARY KEY,
+    title           VARCHAR(128) NOT NULL,
+    body            TEXT NOT NULL,
+    published_at    TIMESTAMP NULL,
+    created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Use CURRENT_TIMESTAMP for automatic date/time
+    updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,  -- Use ON UPDATE CURRENT_TIMESTAMP
+)
+ [42001-224]
+2024-04-04 13:31:30 jdbc[3]: exception
 java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
 	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
 	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
@@ -148,3 +97,227 @@ java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supporte
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-04 13:31:33 jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-04 13:31:35 jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-04 16:38:44.158157+03:00 database: flush
+org.h2.message.DbException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/insid/Desktop/springcontextintro/db/blog.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1546)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2035)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:326)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:343)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:125)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:191)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at com.arakviel.persistence.config.ConnectionManager.createUserTable(ConnectionManager.java:38)
+	at com.arakviel.persistence.config.ConnectionManager.seed(ConnectionManager.java:21)
+	at com.arakviel.persistence.config.ConnectionManager.<init>(ConnectionManager.java:17)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at com.arakviel.Main.main(Main.java:16)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/insid/Desktop/springcontextintro/db/blog.mv.db [2.2.224/7]" [50000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 47 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/insid/Desktop/springcontextintro/db/blog.mv.db [2.2.224/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 41 more
+2024-04-04 13:38:56 jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1573)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:469)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2024-04-04 16:55:37.840943+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS posts(\000a    id              UUID PRIMARY KEY,\000a    user_id         UUID [*]FOREIGN KEY REFERENCES users(id),\000a    title           VARCHAR(128) NOT NULL,\000a    body            TEXT NOT NULL,\000a    published_at    TIMESTAMP NULL,\000a    created_at      TIMESTAMP NOT NULL,\000a    updated_at      TIMESTAMP NOT NULL\000a)\000a"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, DEFAULT, GENERATED, ON UPDATE, NOT NULL, DEFAULT ON NULL, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS posts(
+    id              UUID PRIMARY KEY,
+    user_id         UUID FOREIGN KEY REFERENCES users(id),
+    title           VARCHAR(128) NOT NULL,
+    body            TEXT NOT NULL,
+    published_at    TIMESTAMP NULL,
+    created_at      TIMESTAMP NOT NULL,
+    updated_at      TIMESTAMP NOT NULL
+)
+ [42001-224]
+2024-04-04 17:02:26.438025+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "USERS" because "CONSTRAINT_48C" depends on it; SQL statement:
+DROP TABLE IF EXISTS users [90107-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.core.JdbcTemplate$1ExecuteStatementCallback.doInStatement(JdbcTemplate.java:435)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at com.arakviel.persistence.config.ConnectionManager.createUserTable(ConnectionManager.java:41)
+	at com.arakviel.persistence.config.ConnectionManager.seed(ConnectionManager.java:23)
+	at com.arakviel.persistence.config.ConnectionManager.<init>(ConnectionManager.java:19)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at com.arakviel.Main.main(Main.java:16)
+2024-04-04 17:02:54.385577+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "USERS" because "CONSTRAINT_48C" depends on it; SQL statement:
+DROP TABLE IF EXISTS users [90107-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.core.JdbcTemplate$1ExecuteStatementCallback.doInStatement(JdbcTemplate.java:435)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:444)
+	at com.arakviel.persistence.config.ConnectionManager.createUserTable(ConnectionManager.java:40)
+	at com.arakviel.persistence.config.ConnectionManager.seed(ConnectionManager.java:23)
+	at com.arakviel.persistence.config.ConnectionManager.<init>(ConnectionManager.java:19)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.context.annotation.AnnotationConfigApplicationContext.<init>(AnnotationConfigApplicationContext.java:93)
+	at com.arakviel.Main.main(Main.java:16)
+2024-04-04 17:03:35.390604+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS posts(\000a    id              UUID PRIMARY KEY,\000a    user_id         UUID,\000a    title           VARCHAR(128) NOT NULL,\000a    body            TEXT NOT NULL,\000a    published_at    TIMESTAMP NULL,\000a    created_at      TIMESTAMP NOT NULL,\000a    updated_at      TIMESTAMP NOT NULL,\000a    FOREIGN KEY(user_id) REFERENCES users(id) ON [*]CASCADE DELETE\000a);\000a"; expected "DELETE, UPDATE"; SQL statement:
+CREATE TABLE IF NOT EXISTS posts(
+    id              UUID PRIMARY KEY,
+    user_id         UUID,
+    title           VARCHAR(128) NOT NULL,
+    body            TEXT NOT NULL,
+    published_at    TIMESTAMP NULL,
+    created_at      TIMESTAMP NOT NULL,
+    updated_at      TIMESTAMP NOT NULL,
+    FOREIGN KEY(user_id) REFERENCES users(id) ON CASCADE DELETE
+);
+ [42001-224]
