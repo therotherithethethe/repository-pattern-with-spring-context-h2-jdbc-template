@@ -2,7 +2,7 @@ package com.arakviel.persistence.repository.impl;
 
 import com.arakviel.persistence.config.ConnectionManager;
 import com.arakviel.persistence.entity.User;
-import com.arakviel.persistence.repository.genericrepository.GenericRepository;
+import com.arakviel.persistence.repository.GenericRepository;
 import com.arakviel.persistence.repository.contracts.UserRepository;
 import com.arakviel.persistence.repository.mapper.UserMapper;
 import java.util.ArrayList;

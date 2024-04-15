@@ -1,4 +1,4 @@
-package com.arakviel.persistence.repository;
+package com.arakviel.persistence.repository.genericrepository;
 
 import com.arakviel.persistence.entity.GenericEntity;
 import com.arakviel.persistence.repository.genericrepository.Column;

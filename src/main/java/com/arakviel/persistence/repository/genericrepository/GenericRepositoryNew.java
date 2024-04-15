@@ -1,11 +1,8 @@
 package com.arakviel.persistence.repository.genericrepository;
 
 import com.arakviel.persistence.entity.GenericEntity;
-import com.arakviel.persistence.repository.GenericRowMapperNew;
 import com.arakviel.persistence.repository.Repository;
 import java.lang.reflect.Field;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;

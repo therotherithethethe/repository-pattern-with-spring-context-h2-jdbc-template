@@ -1,4 +1,4 @@
-package com.arakviel.persistence.repository.genericrepository;
+package com.arakviel.persistence.repository;
 
 import static java.lang.StringTemplate.STR;
 
